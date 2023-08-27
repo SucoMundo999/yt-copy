@@ -1,0 +1,137 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 23px;
+}
+
+.video-card {
+  height: 270px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail-container {
+  height: 157px;
+  width: 280px;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.video-time {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: absolute;
+  right: 4px;
+  bottom: 7px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4.5px;
+  padding-right: 4.5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.video-info-flex {
+  display: flex;
+}
+
+.channel-pfp-container {
+  height: 117.203px;
+  width: 48px;
+  transition: opacity 0.15s;
+}
+
+.channel-pfp-space {
+  display: inline-block;
+  position: relative;
+}
+
+.channel-pfp {
+  height: 36px;
+  border-radius: 18px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.channel-pfp-space:hover .channel-pfp-tooltip {
+  opacity: 1;
+}
+
+.channel-pfp-tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  height: 66px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+  padding-right: 16px;
+  z-index: 300;
+  bottom: -74px;
+  opacity: 0;
+  pointer-events: none;
+  font-family: Roboto, Arial;
+}
+
+.channel-pfp-in-tooltip {
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  margin-right: 8px;
+}
+
+.author-in-tooltip {
+  font-weight: 600;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+
+.channel-subscribers-in-tooltip {
+  white-space: nowrap;
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.video-info {
+  height: 112px;
+  width: 232px;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.video-author {
+  font-size: 12px;
+  margin-top: 10px;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.video-author:hover {
+  color: rgb(34, 34, 34);
+}
+
+.video-stats {
+  font-size: 12px;
+  margin-top: 3px;
+  color: rgb(96, 96, 96);
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
